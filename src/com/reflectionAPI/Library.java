@@ -12,16 +12,16 @@ import java.io.Serializable;
 public class Library implements Serializable {
 
     public String name;
-    public int numberOfBooks;
+    private int numberOfBooks;
     protected boolean isOpen;
     String address;
 
     public Library() {
     }
 
-    protected Library(int numberOfBooks) {
-        this.numberOfBooks = 13;
-        this.name = " qwerty";
+    public Library(int numberOfBooks) {
+        this.numberOfBooks = numberOfBooks;
+      // this.name = " qwerty";
     }
 
     public Library(String name, int numberOfBooks, boolean isOpen, String address) {
