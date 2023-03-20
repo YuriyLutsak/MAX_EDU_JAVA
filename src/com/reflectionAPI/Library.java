@@ -21,7 +21,7 @@ public class Library implements Serializable {
 
     public Library(int numberOfBooks) {
         this.numberOfBooks = numberOfBooks;
-      // this.name = " qwerty";
+        this.name = " qwerty";
     }
 
     public Library(String name, int numberOfBooks, boolean isOpen, String address) {
