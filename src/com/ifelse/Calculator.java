@@ -9,11 +9,10 @@ package com.ifelse;
 public class Calculator {
 
     public static void main(String[] args) {
-        Calculator calculator  = new Calculator();
-        calculator.calculate(5);
+        calculate(4);
     }
 
-    public void calculate(int number) {
+    public static void calculate(int number) {
         if (number % 2 == 0) System.out.println("number is even");
         else System.out.println("number is odd");
     }
