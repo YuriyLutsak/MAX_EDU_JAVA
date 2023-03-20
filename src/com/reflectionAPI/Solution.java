@@ -25,13 +25,13 @@ public class Solution {
         System.out.println("Методи класу, їх імена, модифікатори, типи повернення та параметри: ".toUpperCase());
         methodsOfClass();
 
-
     }
+
 
     private static void methodsOfClass() {
         var methods = Library.class.getDeclaredMethods();
         for (Method method : methods) {
-            System.out.println("Ім'я: " +  method.getName() +
+            System.out.println("Ім'я: " + method.getName() +
                     ",  модифікатори: " + Modifier.toString(method.getModifiers()) +
                     ", типи повернення: " + method.getReturnType() +
                     ", параметри: " + Arrays.toString(method.getParameters()));

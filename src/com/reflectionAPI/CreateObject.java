@@ -11,8 +11,10 @@ import java.lang.reflect.InvocationTargetException;
 public class CreateObject {
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         var objectDefaultConstructor = Library.class.getConstructor().newInstance();
+        System.out.println(objectDefaultConstructor);
         var instance = Library.class.getConstructor(String.class, int.class, boolean.class, String.class).newInstance("name", 1, true, "address");
-        Library library = new Library();
+        Library library = new Library(7777);
+        System.out.println(library);
 
     }
 }
