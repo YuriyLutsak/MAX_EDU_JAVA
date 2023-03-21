@@ -1,7 +1,7 @@
 package com.reflectionAPI;
 import java.lang.reflect.InvocationTargetException;
 
-/**
+/**-
  * В тому ж методі main зробити наступні дії:
  * * Створити об’єкт класу Library не використовуючи конструктор.
  * * Створити ще один об’єкт використовуючи конструктор.

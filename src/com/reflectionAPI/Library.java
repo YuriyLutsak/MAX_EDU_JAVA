@@ -1,7 +1,7 @@
 package com.reflectionAPI;
 import java.io.Serializable;
 
-/**
+/**-
  * * Створити клас Library який містить наступні елементи:
  * Чотири поля з різними модифікаторами доступу: name (public), numberOfBooks (private), isOpen (protected) та address (default).
  * * Конструктор з чотирма параметрами.

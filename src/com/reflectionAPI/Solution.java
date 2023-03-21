@@ -3,7 +3,7 @@ package com.reflectionAPI;
 import java.lang.reflect.*;
 import java.util.Arrays;
 
-/**
+/**-
  * В методі main вивести на екран наступну інформацію:
  * * Ім'я класу.+
  * * Модифікатори класу (public, private, protected, abstract, final тощо).
