@@ -1,9 +1,6 @@
 package com.reflectionAPI;
 
-import java.lang.reflect.Array;
-import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
-import java.util.Arrays;
 
 /**
  * В тому ж методі main зробити наступні дії:
@@ -12,21 +9,20 @@ import java.util.Arrays;
  * * В обох об’єктів замінити значення всіх полів, які мають модифікатор доступу private або final за допомогою інструментів reflection APІ.
  */
 public class CreateObject {
+
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException, NoSuchFieldException {
-//        var objectDefaultConstructor = Library.class.getConstructor(int.class).newInstance(333);
         var instance = Library.class
                 .getConstructor(String.class, int.class, boolean.class, String.class)
                 .newInstance("name", 1, true, "address");
 
         System.out.println(instance + " before change");
         var fields = Library.class.getDeclaredFields();
-        for (int i = 0; i < fields.length; i++) {
             fields[0].set(instance, "change name");
             fields[1].setAccessible(true);
             fields[1].set(instance, 131313);
             fields[2].set(instance, false);
             fields[3].set(instance, "change address");
-        }
+
         System.out.println(instance + " changed fields");
 
         Library library = new Library(11);
