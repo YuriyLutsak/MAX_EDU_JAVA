@@ -1,5 +1,4 @@
 package com.reflectionAPI;
-
 import java.io.Serializable;
 
 /**

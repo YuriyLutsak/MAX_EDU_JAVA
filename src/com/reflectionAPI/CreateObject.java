@@ -1,5 +1,4 @@
 package com.reflectionAPI;
-
 import java.lang.reflect.InvocationTargetException;
 
 /**
@@ -22,7 +21,6 @@ public class CreateObject {
             fields[1].set(instance, 131313);
             fields[2].set(instance, false);
             fields[3].set(instance, "change address");
-
         System.out.println(instance + " changed fields");
 
         Library library = new Library(11);
